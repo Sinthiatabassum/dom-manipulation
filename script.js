@@ -29,3 +29,7 @@ function redirectToGoogle(){
     window.location.assign('http://google.com');
 }
 /* Task 4 using jQuery */
+ $('#addText4').click(function(event){
+    var paragraph =$('<p>').text("hello World");
+    $('#task4a').append(paragraph);
+});
