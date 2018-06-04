@@ -29,7 +29,20 @@ function redirectToGoogle(){
     window.location.assign('http://google.com');
 }
 /* Task 4 using jQuery */
+//task4a
  $('#addText4').click(function(event){
-    var paragraph =$('<p>').text("hello World");
+    var paragraph =$('<p>').text("Hello World");
     $('#task4a').append(paragraph);
 });
+
+//task4b
+function changeBG(event){
+    var color = event.target.innerText.toLowerCase();
+    $('body').css('background-color', color);
+}
+
+//task 4c
+$('#sum').click(function(event){
+    var sum = Number($('#num1').val()) + Number($('#num2').val());
+    $('#answer').text(sum)
+})
